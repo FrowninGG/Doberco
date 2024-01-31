@@ -16,12 +16,26 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50vh; /* Adjust the height as needed */
+      height: 50vh;
     }
 
     .center-image img {
-      width: 50%; /* Set the width to 50% of the container */
-      height: auto; /* Maintain aspect ratio */
+      width: 50%;
+      height: auto;
+    }
+
+    .subscribe-form {
+      margin-top: 20px;
+    }
+
+    .subscribe-input {
+      padding: 10px;
+      width: 200px;
+    }
+
+    .subscribe-button {
+      padding: 10px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -38,6 +52,14 @@
     <!-- Centered Image -->
     <div class="center-image">
       <img src="PASTE_THE_RAW_IMAGE_URL_HERE" alt="Description">
+    </div>
+
+    <!-- Subscribe Form -->
+    <div class="subscribe-form">
+      <form id="subscribeForm">
+        <input class="subscribe-input" type="email" placeholder="Enter your email" required>
+        <button class="subscribe-button" type="submit">Subscribe</button>
+      </form>
     </div>
   </div>
 </body>
